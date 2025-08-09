@@ -9,14 +9,14 @@ export default function MemoryLaneScreen({ onNext }) {
 
     const memories = [
         {
-            title: "Remember our childhood days?",
-            description: "Fighting over toys, but never letting anyone else mess with us",
+            title: "Remember those day when we meet suddenly in a unknown gc ?",
+            description: "Just talk like stranger but even the time spent and we gonna be best brother and sister in the world who are not with bloodrealtion",
             emoji: "👶",
             color: "#fb7185",
         },
         {
-            title: "Our secret midnight adventures",
-            description: "Sneaking to the kitchen for late night snacks together",
+            title: "Our secret over balti didnt even know",
+            description: "Bothering u and saying just in a funny way is the best moments of my life",
             emoji: "🍪",
             color: "#a855f7",
         },
