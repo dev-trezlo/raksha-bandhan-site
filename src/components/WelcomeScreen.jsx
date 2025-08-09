@@ -1,23 +1,29 @@
-"use client"
+"use client";
 
-import { motion } from "motion/react"
-import confetti from "canvas-confetti"
+import { motion } from "motion/react";
+import confetti from "canvas-confetti";
 
 export default function WelcomeScreen({ onNext }) {
-
     const handleStart = () => {
+        // Confetti
         confetti({
             particleCount: 100,
             spread: 80,
             origin: { y: 0.7 },
             colors: ["#fb7185", "#a855f7", "#fbbf24"],
             ticks: 300,
-        })
+        });
 
+        // Play music from public folder
+        const audio = new Audio("/rakhi.mp3"); // public/rakhi.mp3
+        audio.loop = true; // loop if you want continuous music
+        audio.play().catch(err => console.error("Audio play failed:", err));
+
+        // Next screen
         setTimeout(() => {
-            onNext()
-        }, 1200)
-    }
+            onNext();
+        }, 1200);
+    };
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center px-4 relative overflow-x-hidden">
@@ -107,5 +113,5 @@ export default function WelcomeScreen({ onNext }) {
                 </div>
             </motion.div>
         </div>
-    )
+    );
 }

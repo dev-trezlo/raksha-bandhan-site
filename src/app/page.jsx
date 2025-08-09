@@ -46,7 +46,7 @@ export default function RakshaBandhanSite() {
           delay: 1,
         }}
         className="fixed bottom-4 right-4 text-[13px] text-white/30 pointer-events-none z-40 font-thin">
-        @anujbuilds
+        @arshbuilds
       </motion.div>
     </div>
   )
